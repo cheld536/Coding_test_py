@@ -80,3 +80,58 @@ from random import randint
 # print(a)
 
 ### SET 공부!!
+
+a = {1,2,3} #리스트는 [], 셋은 {} 중복 x , 튜플() 중복 x 쓰기 x 읽기 o 딕션너리는 키값을 가진다 key:value
+
+b = {1,5,6}
+# print('a:', a)
+# print('b:', b)
+#
+# b.add(3)    # add는 하나만 추가 update는 여러개 b.update([5,5,6]) set은 힙 , 리스트는 filo
+# b.remove(6)
+# print('b:',b)
+
+# print('Union:', a|b)
+# print('Intersection:', a&b)
+# print('Diffence:',a-b)
+
+# li = [2,2,1,1,3]
+# li = set(li) #리스트로 변환되면서 중복 제거, 정렬됨
+# print(li)
+# li = list(li) # 다시 리스트로 변환
+# print(li)
+
+d = {'a': 1,2:3, 'fruit':['apple','orange']}
+#print(d)
+del d['a']
+del d['fruit']
+#print(d)
+d[3] = 7
+d[1] = 10
+# print(d) # 딕셔너리는 키값으로 정렬을 하지 않는다.
+# print(d.keys()) #키값만 출력
+# print(d.values()) #값만 출력
+# print(d.items()) #모든 키 값 쌍이 리스트에 담겨서 출력
+
+# c = list(d.items()) #리스트로 형 변환하고 정렬하고 출력
+# c.sort()
+# print(c)
+
+#### 외부함수 sorted를 쓰면 리스트가 아니여도 정렬가능
+# print(sorted(d.items()))
+
+q = {'1':10,'2':20}
+w = {'2':30,'3':30,'4':40}
+# print(q|w)
+# print(w|q)
+q.update(w) #비의 값으로 에이 값을 업데이트
+
+print('q=',q)
+print('w=',w)
+
+
+
+
+
+
+
